@@ -1,0 +1,56 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 72px;
+    padding-top: 72px;
+}
+
+.wrapperBlock{
+    display: flex;
+    gap: 24px;
+}
+
+.headerSectionItem{
+    max-width: 755px;
+    font-weight: 700;
+    font-family: var(--second-family);
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+.textSectionItem{
+    max-width: 533px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+    font-family: var(--font-family);
+}
+
+.listItems{
+    padding-top: 64px;
+    display: flex;
+    gap: 48px;
+}
+
+.headerList{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: #000;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.headerText{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}

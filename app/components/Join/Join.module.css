@@ -1,0 +1,59 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.background{
+    background-image: url('/desktop/coral-reef.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+    width: 1312px;
+    height: 436px;
+}
+
+
+.wrapper{
+    padding-left: 64px;
+    padding-bottom: 78px;
+    padding-top: 78px;
+}
+
+.headerJoin{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+    max-width: 558px;
+    padding-bottom: 24px;
+}
+
+.headerText{
+    max-width: 558px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    font-family: var(--font-family);
+    padding-bottom: 32px;
+}
+
+
+.buttonJoin{
+    border: 1px solid #4169E1;
+    background-color: #4169E1;
+    border-radius: 8px;
+    padding: 6px 12px;
+    width: 169px;
+    height: 48px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+

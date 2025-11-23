@@ -1,0 +1,59 @@
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.background{
+    background-image: url('/desktop/bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.wrapper{
+    padding-left: 64px;
+    padding-top: 244px;
+    padding-bottom: 347px;
+}
+
+
+.heroHeader{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #fff;
+    max-width: 759px;
+    padding-bottom: 24px;
+}
+
+
+.heroText{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    max-width: 759px;
+    padding-bottom: 32px;
+}
+
+
+.joinButton{
+    border: 1px solid #4169E1;
+    border-radius: 8px;
+    padding: 6px 12px;
+    width: 126px;
+    height: 39px;
+    background-color: #4169E1;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff
+}

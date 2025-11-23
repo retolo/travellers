@@ -1,0 +1,60 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.mainText{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #000;
+    padding-right: 575px;
+}
+
+.footerText{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.copyRightText{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    font-family: var(--font-family);
+    padding-top: 56px;
+    text-align: center;
+}
+
+.footer{
+    padding: 80px 64px;
+    background-color: #E8EEFF;
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.footerList{
+    display: flex;
+    gap: 32px;
+    padding-left: 293px;
+}
+
+.blockIcon{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.listIcons{
+    display: flex;
+    gap: 12px;
+    padding-bottom: 19px;
+}
