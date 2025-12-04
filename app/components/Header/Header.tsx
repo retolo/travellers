@@ -1,7 +1,7 @@
 import Link from "next/link";
 import css from './Header.module.css'
 import AuthNav from "../AuthNav/AuthNav";
-import Hero from "../Hero/Hero";
+// import Hero from "../Hero/Hero";
 import Image from "next/image";
 function Header(){
     return(
@@ -21,7 +21,7 @@ function Header(){
                 </nav>
             </div> 
 
-            <Hero/> 
+            {/* <Hero/>  */}
 
             
         </header>

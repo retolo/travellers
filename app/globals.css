@@ -318,3 +318,20 @@ ul, ol {
   }
 }
 
+.footer{
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.wrapperHeader{
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.header{
+  padding-bottom: 18px;
+  padding-top: 18px;
+  width: 1440px;
+
+}
