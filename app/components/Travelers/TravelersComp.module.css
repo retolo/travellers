@@ -1,0 +1,85 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.mainWrapper{
+    margin-top: 48px;
+}
+
+.header{
+    margin-bottom: 24px;
+}
+
+.travelerList{
+    display: flex;
+    flex-wrap: wrap;
+    gap:24px;
+
+}
+
+.travelerBlock{
+    border-radius: 8px;
+    background-color: #E8EEFF;
+    padding: 24px;
+    
+
+}
+
+.avatar{
+    margin-bottom: 24px;
+}
+
+.name{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.about{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+.profileButton{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 262px;
+    height: 48px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+
+}
+
+
+.loadMoreButton{
+    border-radius: 1px solid #4169E1;
+    border-radius: 8px;
+    width: 135px;
+    height: 48px;
+    margin-top: 24px;
+    cursor: pointer;
+    background-color: #4169E1;
+
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+
+}

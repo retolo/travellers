@@ -19,6 +19,21 @@
     
 }
 
+.loginButtonStories{
+  padding: 4px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 58px;
+  height: 35px;      
+  background: rgba(0, 0, 0, 0.15); 
+  color: #000;              
+  font-size: 18px;
+  font-weight: 500;
+  backdrop-filter: blur(8px); 
+  cursor: pointer;
+  font-family: var(--font-family);
+}
+
 
 
 .registerButton{
@@ -33,4 +48,18 @@
     font-size: 18px;
     color: #000;
     background-color: #fff;
+}
+
+.registerButtonStories{
+    border: 1px solid #4169E1;
+    border-radius: 8px;
+    padding: 4px 10px;
+    width: 113px;
+    height: 35px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4169E1;
 }

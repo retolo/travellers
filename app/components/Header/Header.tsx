@@ -1,27 +1,30 @@
 import Link from "next/link";
 import css from './Header.module.css'
 import AuthNav from "../AuthNav/AuthNav";
-// import Hero from "../Hero/Hero";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 function Header(){
+
+    const pathname = usePathname();
+    const isStories = pathname.startsWith('/stories') || pathname.startsWith('/travelers');
+    console.log(isStories)
     return(
-        <header className={css.header}>
+        <header className={isStories  ? css.headerStories : css.header}>
             <div className={css.container}>
 
 
                 <div className={css.blockIcon}>
                     <Image src={'/icons/plant.svg'} alt='logo' width={23} height={23}/>
-                    <p className={css.headerText}>Подорожники</p>
+                    <p className={isStories ?  css.headerTextStories : css.headerText}>Подорожники</p>
                 </div>
                 <nav className={css.navigation}>
-                    <Link href={'/'} className={css.headerLinks}>Головна</Link>
-                    <Link href={'/stories'} className={css.headerLinks}>Історії</Link>
-                    <Link href={'/travelers'} className={css.headerLinks}>Мандрівники</Link>
+                    <Link href={'/'} className={isStories ? css.headerLinksStories : css.headerLinks}>Головна</Link>
+                    <Link href={'/stories'} className={isStories ? css.headerLinksStories : css.headerLinks}>Історії</Link>
+                    <Link href={'/travelers'} className={isStories ? css.headerLinksStories : css.headerLinks}>Мандрівники</Link>
                     <AuthNav/>
                 </nav>
             </div> 
 
-            {/* <Hero/>  */}
 
             
         </header>

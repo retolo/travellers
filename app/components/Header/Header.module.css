@@ -7,6 +7,7 @@
     left: 0;
 
     width: 100%;
+
 }
 .blockIcon{
     display: flex;
@@ -44,10 +45,27 @@
     color: #fff;
 }
 
+.headerTextStories{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #000;   
+}
+
 .headerLinks{
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
+}
+
+.headerLinksStories{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
 }

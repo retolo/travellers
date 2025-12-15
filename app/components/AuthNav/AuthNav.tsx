@@ -2,8 +2,12 @@
 import { userAuthStore } from "@/app/lib/stores"
 import Link from "next/link";
 import css from './AuthNav.module.css'
+import { usePathname } from "next/navigation";
 function AuthNav(){
     const {isAuthenticated} = userAuthStore();
+    const pathname = usePathname();
+    const isStories = pathname.startsWith('/stories') || pathname.startsWith("/travelers")
+    
     return(
         <>
             {isAuthenticated 
@@ -17,8 +21,8 @@ function AuthNav(){
                 </div>
 
                 : <div className={css.wrapper}>
-                    <Link href={'/auth/login'}><button className={css.loginButton} type="button">Вхід</button></Link>
-                    <Link href={'/auth/register'}><button type="button" className={css.registerButton}>Реєстрація</button></Link>
+                    <Link href={'/auth/login'}><button className={isStories ?  css.loginButtonStories : css.loginButton} type="button">Вхід</button></Link>
+                    <Link href={'/auth/register'}><button type="button" className={isStories ? css.registerButtonStories : css.registerButton}>Реєстрація</button></Link>
                 </div>
             
             }

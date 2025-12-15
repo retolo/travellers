@@ -1,0 +1,147 @@
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.mainWrapper{
+    margin-top: 48px;
+}
+
+.header{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+
+.itemCountry{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 40px;
+}
+
+.storiesList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+
+.storiesBlock{
+    border-radius: 16px;
+}
+
+.wrapperInfo{
+    padding: 24px;
+    background-color: #E8EEFF;
+
+}
+
+.country{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.headingCard{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+
+.about{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 27px;
+}
+
+.wrapperUser{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 27px;
+
+}
+
+.name{
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #000;
+}
+
+.data{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+
+.wrapperButtons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+
+}
+
+.seaMoreButton{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 315px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+
+}
+
+
+.saveButton{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+}
+
+.loadMoreButton{
+    border: 1px solid #4169E1;
+    border-radius: 8px;
+    width: 135px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #4169E1;
+    margin-top: 40px;
+}
