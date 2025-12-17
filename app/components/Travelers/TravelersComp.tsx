@@ -16,6 +16,7 @@ function TravelersComp(){
                             <button type='button' className={css.profileButton}>Переглянути профіль</button>
                         </li>
                     ))}
+                    
                 </ul>
                 <button type='button' className={css.loadMoreButton}>Показати ще</button>
             </div>

@@ -16,3 +16,5 @@ export type travelersType = {
     avatar: string,
     name: string,
 }
+
+
