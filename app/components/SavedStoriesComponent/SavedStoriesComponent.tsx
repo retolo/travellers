@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { type travelersStoriesType } from "@/app/types";
 import { usePathname } from 'next/navigation';
-function SavedStories(){
+function SavedStoriesComponent(){
 
     const travelers: travelersStoriesType[] = [];
 
@@ -61,4 +61,4 @@ function SavedStories(){
 }
 
 
-export default SavedStories;
+export default SavedStoriesComponent;

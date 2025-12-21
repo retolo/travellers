@@ -1,0 +1,72 @@
+.backDrop{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 768px;
+    height: 400px;
+    padding: 64px;
+    background-color: #F7F9FF;
+}
+
+
+.header{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #000;
+    margin-bottom: 16px;
+}
+
+
+.text{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+
+.wrapperForButtons{
+    display: flex;
+    gap: 24px;
+}
+
+.cancelButton{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 203px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.logOutButton{
+    border: 1px solid #4169E1;
+    border-radius: 8px;
+    width: 203px;
+    height: 48px;
+    background-color: #4169E1;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
