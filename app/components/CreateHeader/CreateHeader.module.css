@@ -1,0 +1,83 @@
+
+
+
+.blockIcon{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 64px;
+    padding-bottom: 16px;
+    padding-right: 64px;
+    padding-top: 16px;
+}
+
+.navigation{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.blockIcon{
+    padding-right: 359px;
+}
+
+.headerText{
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+
+
+
+.headerLinks{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+
+
+.publishStorieButton{
+    border: 1px solid #4169E1;
+    background-color: #4169E1;
+    border-radius: 8px;
+    width: 202px;
+    height: 35px;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+.publishStorieButton{
+    margin-left: 32px;
+    margin-right: 16px;
+}
+.avatar{
+    margin-right: 4px;
+}
+
+.name{
+    padding-right: 16px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
