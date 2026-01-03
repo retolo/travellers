@@ -1,6 +1,5 @@
 "use client"
-import Image from "next/image";
-import Link from "next/link";
+import AuthHeader from "./components/AuthHeader/AuthHeader";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
@@ -26,30 +25,29 @@ export default function RootLayout({
 }>) {
   const pathname = usePathname();
 
-  let isAuthPage = pathname.startsWith('/auth')
+  const isAuthPage = pathname.startsWith('/auth') && !pathname.endsWith('/create') && !pathname.endsWith('/saved-stories') && !pathname.endsWith('/my-stories')
   const isCreatePage = pathname.endsWith('/create')
+  const isMain = pathname.endsWith('/')
+  const isStories  = pathname.endsWith('/saved-stories') || pathname.endsWith('/my-stories')
 
-  if(isCreatePage){
-    isAuthPage = false;
-  }
+
+
+
+  
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
 
-        {isAuthPage &&
-        
-        <header className="header">
-          <Link href={'/'}><div className="wrapperHeader">
-            <Image src={'/icons/plant.svg'} alt='logo' width={23} height={23}/>
-            <p>Подорожники</p>
-          </div></Link>
-            
-        </header>
- 
-        
+        {isMain && !isAuthPage && !isAuthPage &&
+          <Header/>
         }
 
-        {isCreatePage &&
+        {isAuthPage && !isCreatePage && !isMain &&
+          <AuthHeader/>
+        }
+        
+ 
+        {isCreatePage && !isMain && !isAuthPage &&
           <CreateHeader/>
         }
         <main>
@@ -66,6 +64,10 @@ export default function RootLayout({
 
         {isCreatePage &&
         
+          <Footer/>
+        }
+
+        {isStories &&
           <Footer/>
         }
 

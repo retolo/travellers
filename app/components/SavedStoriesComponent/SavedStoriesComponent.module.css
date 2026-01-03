@@ -23,10 +23,24 @@
     color: #000;
 }
 .wrapperForButtons{
+    padding: 4px;
+    border-radius: 10px;
     margin-top: 48px;
     background-color: #E8EEFF;
+    width: 422px;
+    display: flex;
+    gap:61px;
+    align-items: center;
 
 }
+
+
+
+
+
+
+
+
 
 
 .checkedButton{
@@ -45,6 +59,7 @@
     color: #000;
 }
 
+
 .noneCheckedButton{
     background-color: transparent;
 
@@ -53,7 +68,7 @@
     font-size: 18px;
     line-height: 1.5;
     color: #000;
-    cursor: pointer;
+
 }
 .userAboutText{
     font-family: var(--font-family);
@@ -182,4 +197,72 @@
     color: #fff;
     background-color: #4169E1;
     margin-top: 40px;
+}
+
+.wrapperNoSavedStories{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #E8EEFF;
+    border-radius:  24px;
+    margin-top: 40px;
+    width: 533px;
+    height: 268px;
+    max-width: 768px;
+
+}
+
+.wrapperNoUserStories{
+    border-radius: 24px;
+    padding: 40px 32px;
+    width: 533px;
+    max-width: 768px;
+    background-color: #E8EEFF;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.textNoStories{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: #000;
+    margin-bottom: 32px;
+}
+
+
+.buttonUserSavedStories{
+    border: 1px solid #4169E1;
+    background-color: #4169E1;
+    width: 111px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.buttonUserNoStories{
+    border: 1px solid #4169E1;
+    background-color: #4169E1;
+    width: 206px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
 }

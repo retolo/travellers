@@ -1,9 +1,13 @@
+
 import Image from "next/image";
 import css from './ProfileTravellerPublic.module.css'
 import { type travelersStoriesType } from "@/app/types";
+import Link from "next/link";
+
 function ProfileTravellerPublic(){
 
     const travelers: travelersStoriesType[] = [];
+
 
     return(
         <div className={css.container}>
@@ -19,8 +23,8 @@ function ProfileTravellerPublic(){
             </div>
 
             <h2 className={css.headerStorie}>Історії Мандрівника</h2>
-
-            <ul className={css.storiesList}>
+            {travelers.length > 0
+                ? <ul className={css.storiesList}>
                 {travelers.map((traveler, index) =>(
                     <li className={css.storiesBlock} key={index}>
                         <Image className={css.mainImage} src={traveler.mainImg} alt='main image place' width={421} height={280}/>
@@ -44,6 +48,14 @@ function ProfileTravellerPublic(){
                     </li>
                 ))}
             </ul>
+            :<div className={css.wrapperNoUserProfileStories}>
+                <p className={css.textNoStories}>Цей користувач ще не публікував історій</p>
+                <Link href={'/stories'}><button type='button' className={css.buttonBackToStories}>Назад до історій</button></Link>
+            </div>
+            
+            
+            }
+            
             <button type="button" className={css.loadMoreButton}>Показати ще</button>
         </div>
     )

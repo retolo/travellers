@@ -163,3 +163,40 @@
     background-color: #4169E1;
     margin-top: 40px;
 }
+
+
+.wrapperNoUserProfileStories{
+    border-radius: 24px;
+    padding: 40px 32px;
+    width: 533px;
+    max-width: 768px;
+    background-color: #E8EEFF;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.textNoStories{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: #000;
+}
+
+
+.buttonBackToStories{
+    background-color: #4169E1;
+    border: 1px solid #4169E1;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 165px;
+    height: 48px;
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
