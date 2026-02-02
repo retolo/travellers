@@ -1,0 +1,123 @@
+.mainStories{
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.moreStories{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 72px;
+    cursor: pointer;
+    border: 1px solid #4169E1;
+    background-color: #4169E1;
+    color: #fff;
+    width: 163px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.mainImage{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+    display: block;
+}
+
+.wrapperInfo{
+    padding: 24px;
+    width: 421px;
+    height: 397px;
+    background-color: #E8EEFF;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.country{
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.title{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+
+.article{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;      
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 102px;
+
+}
+
+.cardImage{
+    height: 277px;
+    overflow: hidden;
+    
+}
+
+
+.seaMoreButton{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 315px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.10);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+.wrapperButtons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+
+}
+
+.saveButton{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.10);
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,6 +1,6 @@
 import { HydrationBoundary, dehydrate, QueryClient} from "@tanstack/react-query";
-import StorieClientDetails from "./StorieClientDetails";
-import { getStorieById } from "@/app/lib/apis";
+import StoryClientDetails from "./StoryClientDetails";
+import { getStoryById } from "@/app/lib/apis/clientApis";
 
 
 
@@ -10,7 +10,7 @@ type Props = {
 
 
 
-async function Storie({params}: Props){
+async function Story({params}: Props){
     const {id} = await params;
 
 
@@ -18,18 +18,18 @@ async function Storie({params}: Props){
 
 
     await queryClient.prefetchQuery({
-        queryKey: ['storie', id],
-        queryFn: () => getStorieById(id)
+        queryKey: ['story', id],
+        queryFn: () => getStoryById(id)
     })
 
 
     return(
         <HydrationBoundary state={dehydrate(queryClient)}>
-            <StorieClientDetails/>
+            <StoryClientDetails />
         </HydrationBoundary>
     )
 
 }
 
 
-export default Storie;
+export default Story;

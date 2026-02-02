@@ -7,7 +7,7 @@
 }
 
 .mainHeader{
-    font-family: var(--font-family);
+    font-family: var(--second-family);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
@@ -18,11 +18,11 @@
 .infoWrapper{
     display: flex;
     margin-bottom: 16px;
+    align-items: center;
+    /* justify-content: space-between; */
 }
 
-.infoWrapper:nth-child(2){
-    padding-right: 686px;
-}
+
 
 .info{
     font-family: var(--font-family);
@@ -30,6 +30,7 @@
     font-size: 18px;
     line-height: 1.5;
     color: #000;
+    margin-right: 8px;
 }
 
 .span{
@@ -38,7 +39,18 @@
     font-size: 18px;
     line-height: 1.5;
     color: #000;
+
 }
+
+
+.dateWrapper{
+    margin-right: 530px;
+    margin-left: 48px;
+}
+
+
+
+
 
 .region{
     font-family: var(--font-family);
@@ -47,22 +59,30 @@
     color: #000;
     line-height: 1.5;
 
-    border:1px solid rgba(0, 0, 0, 0.5);
+    border:1px solid rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 4px 10px;
-    background-color: rgba(0, 0, 0, 0.5);;
+    background-color: rgba(0, 0, 0, 0.15);;
 }
 
 
 .mainImage{
     border-radius: 24px;
     margin-bottom: 48px;
+    width: 1312px;
+    height: 874px;
+        object-fit: cover;
+    display: block;
 }
 
 
 .aboutWrapper{
     display: flex;
     gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 
@@ -72,13 +92,18 @@
     font-size: 18px;
     line-height: 1.5;
     color: #000;
+    max-width: 865px;
 }
 
 .saveWrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 32px;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+
 }
 
 
@@ -100,6 +125,7 @@
     line-height: 1.5;
     color: #000;
     margin-bottom: 16px;
+    max-width: 354px;
 }
 
 .saveButton{
@@ -232,3 +258,107 @@
     width: 48px;
     height: 48px;
 }
+
+
+.listPopularStories{
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 72px;
+}
+
+.storiesBlock{
+    width: 416px;
+    height: 675px;
+
+}
+
+
+.wrapperInfo{
+    padding: 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.category{
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+}
+
+
+.title{
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.article{
+    margin-bottom: 102px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;      
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.popularImage{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    
+    
+}
+
+.seaMoreButton{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000;
+}
+
+.saveButtonCard{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapperButtons{
+    display: flex;
+    gap: 10px;
+}
+
+
+.cardImage{
+    height: 277px;
+    overflow: hidden;
+    
+}
+
+.cardImageMain{
+    height: 874px;
+    overflow: hidden;
+}
+

@@ -1,10 +1,10 @@
-import StoriesTravellers from "@/app/components/StoriesTravellers/StoriesTravellers";
+import StoriesTravelers from "@/app/components/StoriesTravelers/StoriesTravelers";
 
 function Stories(){
     return(
         <>
         
-            <StoriesTravellers/>
+            <StoriesTravelers/>
         </>
     )
 }
