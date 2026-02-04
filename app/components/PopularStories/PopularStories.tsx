@@ -1,9 +1,8 @@
 'use client'
 
 import css from './PopularStories.module.css'
-import { getStories, getCategory} from '@/app/lib/apis/clientApis';
+import { getStories, getCategory} from '@/app/lib/apis/storyApis';
 import { useQuery } from '@tanstack/react-query';
-import { useEffect } from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
 import { categories } from '@/app/types';
@@ -11,11 +10,11 @@ import Link from 'next/link';
  function PopularStories(){
 
     // const [category, setCategory] = useState<string>('');
-
-
+    const [page] = useState<number>(1);
+    const perPage = 3;
     const {data} = useQuery({
-        queryKey: ['stories'],
-        queryFn: () => getStories()
+        queryKey: ['stories', page, perPage],
+        queryFn: () => getStories({page: page, perPage: perPage})
     })
     
     

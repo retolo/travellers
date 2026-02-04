@@ -5,6 +5,7 @@
 
 .mainWrapper{
     margin-top: 48px;
+    margin-bottom: 72px;
 }
 
 .header{
@@ -22,12 +23,16 @@
     border-radius: 8px;
     background-color: #E8EEFF;
     padding: 24px;
+    width: 310px;
+    height: 384px;
+    margin-bottom: 24px;
     
 
 }
 
 .avatar{
     margin-bottom: 24px;
+    border-radius: 50%;
 }
 
 .name{
@@ -46,12 +51,18 @@
     line-height: 1.5;
     color: #000;
     margin-bottom: 16px;
+    max-width: 262px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;      
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .profileButton{
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.15);
     width: 262px;
     height: 48px;
 
@@ -65,14 +76,13 @@
 
 
 .loadMoreButton{
-    border-radius: 1px solid #4169E1;
+    border: 1px solid #4169E1;
     border-radius: 8px;
     width: 135px;
     height: 48px;
-    margin-top: 24px;
     cursor: pointer;
     background-color: #4169E1;
-
+    margin-bottom: 72px;
 
     font-family: var(--font-family);
     font-weight: 500;

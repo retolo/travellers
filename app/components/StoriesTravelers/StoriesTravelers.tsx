@@ -2,46 +2,38 @@
 
 import css from './StoriesTravelers.module.css'
 import Image from 'next/image';
-import { getStories, getCategory} from '@/app/lib/apis/clientApis';
+import { getStories, getCategory} from '@/app/lib/apis/storyApis';
 import { useQuery } from '@tanstack/react-query';
-import { useState, useEffect } from 'react';
+import { useState, useEffect} from 'react';
 import { categories } from '@/app/types';
+import { storiesType } from '@/app/types';
 import Link from 'next/link';
 
 function StoriesTravelers(){
-
+    const perPage = 12;
+    // const [count, setCount] = useState<number>(0)
+    const [stories, setStories] = useState<storiesType[]>([]);
+    const [page, setPage] = useState<number>(1)
         const {data} = useQuery({
-            queryKey: ['stories'],
-            queryFn: () => getStories()
+            queryKey: ['stories',  page, perPage],
+            queryFn: () => getStories({page: page, perPage: perPage})
         })
 
-        // useEffect(() =>{
-            
-            
-        //         data?.stories.data.forEach((story) =>{
-        //             getCategory(story.category).then(response =>{
-        //                 setCategories(prev => [...prev, response.data])
-                        
-        //                 console.log(response.data)
-        //             })
-        //         })
-            
-            
-        // }, [data?.stories.data])
-        
+        useEffect(() =>{
+            const fetchAll = () =>{
+                
+                if(data?.stories.data !== undefined){
+                     setStories([...stories, ...data.stories.data])
+                }
+               
+            }
+            fetchAll();
+        }, [data])
 
 
-        // useEffect(() =>{
-        //     console.log(categories)
-        // }, [categories])
-
-
-
-        // if(categories.length !== 10){
-        //     return(
-        //         <p>Loading...</p>
-        //     )
-        // }
+        useEffect(() =>{
+            console.log(stories)
+        }, [stories])
 
     return(
         <div className={css.container}>
@@ -66,7 +58,7 @@ function StoriesTravelers(){
                     
                 </ul>
                 <ul className={css.storiesList}>
-                    {data !== undefined && data.stories !== undefined && data?.stories.data.map((traveler, index) =>(
+                    {stories.map((traveler, index) =>(
                         <li className={css.storiesBlock} key={index}>
                             <div className={css.card}>
                                 <div className={css.cardImage}>
@@ -94,7 +86,7 @@ function StoriesTravelers(){
                         </li>
                     ))}
                 </ul>
-                <button className={css.loadMoreButton} type='button'>Показати ще</button>
+                <button onClick={() => setPage(page + 1)} className={css.loadMoreButton} type='button'>Показати ще</button>
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
-import { NextRequest, NextResponse } from "next/server";
-import { ApiError, api } from "../../api";
+import { api, ApiError } from "../../api";
+import { NextResponse, NextRequest} from "next/server";
+
 
 
 
@@ -7,32 +8,29 @@ import { ApiError, api } from "../../api";
 export async function GET(request:NextRequest) {
 
     try {
-
         const page = Number(request.nextUrl.searchParams.get('page') ?? 1);
-        const perPage = Number(request.nextUrl.searchParams.get('perPage') ?? 12);
-        const { data } = await api.get('/story/stories', {params:{
+        const perPage  = Number(request.nextUrl.searchParams.get('perPage') ?? 12);
+
+        const {data} = await api.get('/user/travelers', {params: {
             page: page,
             perPage: perPage
-        }});
-        return NextResponse.json(data)
+        }})
+
+
+        return NextResponse.json(data);
     } catch (error) {
+
         const err = error as ApiError;
+
         return NextResponse.json(
             {
-                error: err.response?.data.error ?? err.message,
-                
+                error: err.response?.data ?? err.message 
             },
             {
                 status: err.status
             }
         )
-
         
     }
     
 }
-
-
-
-
-

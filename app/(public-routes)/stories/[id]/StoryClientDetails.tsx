@@ -2,15 +2,16 @@
 import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import css from './StoryClientDetails.module.css'
-import { getStoryById } from "@/app/lib/apis/clientApis";
-import { getStories } from "@/app/lib/apis/clientApis";
+import { getStoryById } from "@/app/lib/apis/storyApis";
+import { getStories } from "@/app/lib/apis/storyApis";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import { useState } from "react";
 function StoryClientDetails(){
 
     const {id} = useParams<{id: string}>();
-
-
+    const [page] = useState<number>(1);
+    const perPage = 3;
 
     const {data, isLoading} = useQuery({
         queryKey: ['story', id],
@@ -20,8 +21,8 @@ function StoryClientDetails(){
 
 
     const {data: popularStories} = useQuery({
-        queryKey: ['stories'],
-        queryFn: () => getStories()
+        queryKey: ['stories', perPage, page],
+        queryFn: () => getStories({page: page, perPage: perPage})
     })
 
     

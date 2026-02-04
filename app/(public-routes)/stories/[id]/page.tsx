@@ -1,6 +1,6 @@
 import { HydrationBoundary, dehydrate, QueryClient} from "@tanstack/react-query";
 import StoryClientDetails from "./StoryClientDetails";
-import { getStoryById } from "@/app/lib/apis/clientApis";
+import { getStoryById } from "@/app/lib/apis/storyApis";
 
 
 

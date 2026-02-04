@@ -11,11 +11,6 @@ export type travelersStoriesType = {
 }
 
 
-export type travelersType = {
-    about: string,
-    avatar: string,
-    name: string,
-}
 
 
 export type storiesType = {
@@ -50,6 +45,38 @@ export type StoriesResponse = {
   status: number
   message: string
   data: StoriesResponseData
+}
+
+
+
+export type travelerType = {
+    _id: string,
+    name: string,
+    avatarUrl: string,
+    articlesAmount: number,
+    description: string,
+}
+
+
+export type TravelerPagination = {
+  data: travelerType[]
+  hasNextPage: boolean
+  hasPreviousPage: boolean
+  page: number
+  perPage: number
+  totalItems: number
+  totalPages: number
+}
+
+export type TravelerResponseData = {
+  travelers: TravelerPagination
+}
+
+
+export type TravelerResponse = {
+  status: number
+  message: string
+  data: TravelerResponseData
 }
 
 
